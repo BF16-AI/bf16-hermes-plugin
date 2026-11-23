@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bf16-hermes-plugin"
+version = "0.1.0"
+description = "Official bf16.ai 1M-context uncensored LLM model provider plugin for Hermes Agent"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "BF16 Team", email = "hello@bf16.ai" }]
+keywords = ["bf16", "hermes-agent", "llm", "openai-compatible", "deepseek", "glm", "kimi"]
+
+[project.urls]
+Homepage = "https://bf16.ai"
+Documentation = "https://bf16.ai/docs"
+Repository = "https://github.com/BF16-AI/bf16-hermes-plugin"
+Pricing = "https://bf16.ai/pricing"
+
+[tool.setuptools]
+py-modules = []
+packages = ["bf16_hermes_plugin"]
+
+[tool.setuptools.package-dir]
+bf16_hermes_plugin = "."
