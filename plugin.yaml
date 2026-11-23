@@ -1,0 +1,11 @@
+name: bf16-provider
+kind: model-provider
+version: 1.0.0
+description: bf16.ai serves uncensored open-weight models (DeepSeek V4.1 Flash, GLM-5.3, Kimi K3.1 Pro, and bf16 Auto routers) with 1M context, vision, and tool calling over an OpenAI-compatible API
+author: BF16 AI
+requires_hermes: ">=0.21.6"
+requires_env:
+  - name: BF16_API_KEY
+    description: bf16.ai API key (create one at https://bf16.ai/dashboard/keys)
+    url: https://bf16.ai/dashboard/keys
+    secret: true
